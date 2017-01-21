@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="promptBox" class="hidePrompt overlayed text-center"><h1  id="promptTitle" class="hidePrompt text-center" style="margin-top:50px;">Do you want to play again?</h1>
+    <button class="hidePrompt text-center" id="promptButton" onclick="reset()">Go again!</button></div>
+    <div id="changeBg" class="container-fluid fightbg">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <!--<button id="change-btn" lass="btn btn-large" onclick="changeBg()">Change Stage</button>
+                <button id="slap">Slap</button>-->
+            </div>
+            <div class="col-md-8 text-center" style="background-color:black;">
+                <h1 style="color:white;font-size:60px;">** Thug Unicorn **</h1>
+                <h3 style="color:white;">Left arrow: Change scene - Up arrow: dive attack - Right arrow: kick attack</h3>
+            </div>
+        </div>
+        <div class="row stage">
+            <div class="col-md-6 fighterheight" style="position: relative;">
+                <img src="images/ready.png" class="center-block flipper unicorn" id="myAnimation" alt="">
+            </div>
+            <div class="col-md-6 fighterheight">
+                <img id="powpow" src="images/bang.png" class="img-responsive center-block hidePow" alt="">
+                <img id="brian" src="images/briannormal.png" class="img-responsive center-block " alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="healthbar">Brian's health: <span id="healthmeter" class="health">100</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

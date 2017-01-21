@@ -1,0 +1,75 @@
+.fightbg {
+    /* This image will be displayed fullscreen */
+    background: url('images/fightback.gif') no-repeat center center;
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height: 100%;
+    /* The Magic */
+    background-size: cover;
+    height: 100vh;
+}
+
+.stage {
+    margin-top: 20%;
+}
+
+.fighterheight {
+    height: 300px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+}
+
+.healthbar {
+    color:white;
+    font-size:30px;
+}
+
+.flipper {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        max-height: 300px;
+}
+
+.unicorn {
+    max-height:280px;
+}
+
+
+#myAnimation {
+  
+  position: absolute;
+ 
+}
+
+.hidePow {
+    display:none !important;
+}
+
+.hideBrian {
+    display:none !important;
+}
+
+.hidePrompt {
+    display:none !important;
+}
+
+.overlayed {
+
+    display:inline-block;
+    background-image: url(images/thug.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #f3f3f3;
+    z-index: 1;"
+}
